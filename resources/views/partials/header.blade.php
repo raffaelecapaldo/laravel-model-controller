@@ -11,7 +11,7 @@
             @else
             text-secondary
           @endif ">Home</a></li>
-          <li><a href="{{route('movies')}}" class="nav-link px-2 @if (url()->current() == route('movies'))
+          <li><a href="{{route('movies.index')}}" class="nav-link px-2 @if (url()->current() == route('movies.index'))
             text-white
             @else
             text-secondary

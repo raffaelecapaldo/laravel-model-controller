@@ -18,4 +18,10 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/movies', [PageController::class, 'index'])->name('movies');
+Route::get('/movies', [PageController::class, 'index'])->name('movies.index');
+
+Route::get('/movie/{id}', [PageController::class, 'show'])->name('movies.show');
+
+Route::get('/movie', function () {
+    return redirect('/movies');
+});
