@@ -32,7 +32,7 @@
 
 /* PARTIALS */
 
-.myfooter {
+.myfooter, .bg-red {
     background-color: #d03641;
 }
 
@@ -64,3 +64,35 @@
         height: fit-content;
     }
 }
+
+
+/* SHOW */
+
+.bg-movie {
+    width: 100%;
+    background-color: #212529;
+
+}
+
+.movie-container {
+    max-width: 600px;
+
+    .thumb {
+        width: 300px;
+    }
+}
+
+.back {
+    padding-bottom:15rem;
+    a {
+        color:white;
+        text-decoration: none;
+        transition:0.2s;
+    }
+    &:hover {
+        a {
+            color:#d03641;
+        }
+    }
+}
+

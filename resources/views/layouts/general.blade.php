@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body class="@yield('bodyclass')">
 @include('partials.header')
     <main>
         @yield('content')
