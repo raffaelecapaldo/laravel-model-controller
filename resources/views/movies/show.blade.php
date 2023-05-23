@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="container">
-<h1 class="text-center pb-3">Movie details</h1>
+<h1 class="text-center pb-3 text-white">@yield('titleshow', 'Movie details')</h1>
 </div>
 <div class="bg-movie">
 <div class="movie-container container-sm">
@@ -32,7 +32,7 @@
     </div>
 
     <div class="back d-flex justify-content-center mt-5">
-    <a class="text-center fs-4 fw-bold" href="{{route('movies.index')}}">Back to Catalogue</a>
+    <a class="text-center fs-4 fw-bold" href="{{route('movies.index')}}">@yield('backtext', 'Back to our catalogue')</a>
 </div>
 </div>
 </div>
