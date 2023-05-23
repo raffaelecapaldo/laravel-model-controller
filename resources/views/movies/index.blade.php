@@ -4,10 +4,10 @@
 @section('content')
 <div class="container">
     <h1 class="text-center">Movies currently available in the catalog</h1>
-    <div class="row">
+    <div class="row show-movies">
         @foreach ($movies as $movie)
             <div class="col-xxl-3 col-xl-4 col-md-6 col-sm-12 d-flex justify-content-center mb-3">
-                <div class="card">
+                <a href=""><div class="card">
                     <div class="img-card">
                         <img src="{{ $movie->image }}" class="card-img-top" alt="{{ $movie->title }}">
                     </div>
@@ -26,7 +26,7 @@
                         </div>
 
                     </div>
-                </div>
+                </div></a>
             </div>
             @endforeach
     </div>
